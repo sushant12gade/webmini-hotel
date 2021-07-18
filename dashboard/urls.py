@@ -3,8 +3,8 @@ from django.contrib import admin
 from.import views
 
 #  django admin header customization
-admin.site.site_header = "login to  devloper 𝓡𝓑𝓗𝓞𝓣𝓔𝓛𝓢"
-admin.site.site_title = "login to   𝓡𝓑𝓗𝓞𝓣𝓔𝓛𝓢 dashboard "
+admin.site.site_header = "login to  devloper XYZ𝓗𝓞𝓣𝓔𝓛𝓢"
+admin.site.site_title = "login to   XYZ𝓗𝓞𝓣𝓔𝓛𝓢 dashboard "
 admin.site.index_title = "welcome to portal "
 
 urlpatterns = [

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block title %} book {% endblock title %}
+
+
+{% block body %}
+ <div class="containerfluid">
+    
+    <form method="Post" action="/book">
+        {% csrf_token %}
+
+ 
+     <img src="https://source.unsplash.com/1600x400/?hotel" class="d-block w-100" alt="...">
+     <h2>  <b> Booking For  Rooms</b></h2>
+     <div class="mb-3">
+      <label for="name2" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name2"  name="name2" placeholder="Name " required>
+     </div>
+
+     <div class="mb-3">
+      <label for="place2" class="form-label">place</label>
+      <input type="text" class="form-control" id="place2"  name="place2" placeholder="your address permanent" required>
+     </div>
+   
+  
+     <div class="mb-3">
+      <label for="phone2" class="form-label">mobileno.</label>
+      <input type="number" class="form-control" id="phone2"  name="phone2" placeholder="on use conatact no. " required>
+     </div>
+     <div class="mb-3">
+      <label for="email2" class="form-label">Email</label>
+      <input type="email2" class="form-control" id="email2" name="email2"  placeholder="name@example.com" required>
+     </div>
+
+   <select class="form-select" aria-label="Default select example  " name="select1">
+  <option selected>Total person</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+  <option value="4">four</option>
+
+   
+</select> <br>
+
+   <select class="form-select" aria-label="Default select example" name="select2">
+  <option selected>Room type</option>
+  <option value="1">simple</option>
+  <option value="2">comfort</option>
+  <option value="3">super comfort</option>
+  <option value="4">king</option>
+  
+   
+</select>
+<br> 
+
+ <div class="mb-3">
+      <label for="days" class="form-label">days</label>
+      <input type="number" class="form-control" id="days" name="days"  placeholder=" no of days for stay" required>
+     </div>
+
+ <div class="mb-3">
+      <label for="come" class="form-label">checkin</label>
+      <input type="date" class="form-control" id="come" name="come"  placeholder="check in date" required>
+     </div>
+
+ <div class="mb-3">
+      <label for="cometime" class="form-label">checkin time</label>
+      <input type="time" class="form-control" id="cometime" name="cometime"  placeholder="check in time" required>
+     </div>
+
+<div class="mb-3">
+      <label for="end" class="form-label">check out</label>
+      <input type="date" class="form-control" id="end" name="end"  placeholder="check out" required>
+     </div>
+
+<div class="mb-3">
+      <label for="endtime" class="form-label">checkout time</label>
+      <input type="time" class="form-control" id="endtime" name="endtime"  placeholder="check out  time" required>
+     </div>
+
+
+     <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+
+{% endblock body %}
